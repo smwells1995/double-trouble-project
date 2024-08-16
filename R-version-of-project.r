@@ -67,8 +67,8 @@ corrplot(cor_matrix, method = "circle",
         cl.cex = 1.2)
 dev.off()
 
-png("correlation_shade.png", width = 800, height = 800)
-corrplot(cor_matrix, method = "shade",
+png("correlation_num.png", width = 800, height = 800)
+corrplot(cor_matrix, method = "number",
         tl.cex = 1.2,
         cl.cex = 1.2)
 dev.off()
