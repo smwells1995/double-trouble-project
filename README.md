@@ -14,5 +14,6 @@ Advancing into Analytics by George Mount (O’Reilly). Copyright 2021 George Mou
 - Correlation & Regression Analysis
 - Modeling & Prediction
 
+Note: This project is a WIP! There is more to come :) 
 
 _The data being analyzed is from the Australian Institute of Sports (ais) dataset_
