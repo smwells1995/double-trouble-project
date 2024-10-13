@@ -5,6 +5,8 @@ library(psych)
 library(corrplot)
 library(DAAG)
 
+options(repr.plot.width = 20.0, repr.plot.height = 13.3)
+
 # Import, preview, and explore data
 url <- "https://raw.githubusercontent.com/smwells1995/double-trouble-project/main/ais.csv"
 ais_data <- read.csv(url)
@@ -86,8 +88,8 @@ ggplot(data = select(ais_data, ht, wt), aes(x = wt, y = ht)) +
           axis.title.y = element_text(size = 16),
           axis.text.x = element_text(size = 14),
           axis.text.y = element_text(size = 14)) +
-  xlab("Weight (lb)") +
-  ylab("Height (in)") +
+  xlab("Weight (kg)") +
+  ylab("Height (cm)") +
   ggtitle("Relationship between Height and Weight")
 
 ggsave("ht_wt_regression.png", plot = last_plot())
